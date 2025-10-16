@@ -1,0 +1,509 @@
+/*--------------Contact us page --------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+	min-height:100vh;
+	width:100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Image/Fas.jpg);
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-items: space-between;
+    align-items: center;
+}
+nav img{
+width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1c8ce7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+  
+}
+.text-box{
+	width:90%;
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	
+}
+.text-box h1{
+	font-size:20px;
+}
+.hero-btn{
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	border:1px solid #fff;
+	padding: 12px 34px;
+	font-size:15px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.hero-btn:hover{
+	border:1px solid #f44336;
+	background:#f44336;
+	transition:1s;
+}
+nav .fa{
+    
+    display: none;
+}
+@media(max-width:700px){
+	.text-box h1{
+	font-size:20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*-------------------------purpose--------------------------------*/
+.purpose{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.thoughts{
+    min-height:350px;
+    border: 1px white;
+    width: 100%;
+    background: url(Image/Steve.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*------------------Goals---------------*/
+.Goals{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+h1{
+ font-size: 40px;
+ font-weight: 600;
+
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-self: space-between;
+}
+.G1{
+    flex-basis: 31%;
+    background: rgb(149, 213, 236);
+    border-radius: 10px;
+    margin-bottom:5%;
+    margin-right: 0.5cm;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+/*-----------------------------------*/
+.index-blog h1{
+    padding-top: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1.5cm;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------*/
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Image/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header1{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Image/blogging.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header2{
+    height: 60vh;
+    width: 100%;
+    background-image:url('Image/event1.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header3{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Image/About1.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header4{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Image/networking.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+
+}
+.about-col{
+
+flex-basis: 48%;
+padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+    padding-left: 5px;
+}
+.about-col h1{
+    color: #0a0a0a;
+    padding-top: 0;
+    
+    font-family: sans-serif;
+    
+}
+.about-col p{
+    color: #0a0a0a;
+    padding: 15px 0 25px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+/*--------------------mermers---------------------*/
+.mermers h1{
+    background-color: rgb(136, 146, 143);
+    text-align: center;
+    margin-inline: 3.4cm;
+    font-family: 'Times New Roman';
+}
+.img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+/*--------------------blog---------------------*/
+
+
+#galleries li
+{
+    width:300px;
+    display:inline-block;
+    
+    margin-right: 1.5cm;
+    margin-left: 1.5cm;
+}
+#galleries li p
+{    
+    margin:30px 0 20px 0;
+    margin-right: 1.5cm;
+    
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+flex-basis: 48%;
+margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0%;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: black;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact-col a{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/*-------------------Events--------------------------*/
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7),url('Image/event1.jpg'));
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-col p{
+    font-style: normal;
+    text-align: justify;
+    margin-inline-end: 1cm;
+}
+/*------------------blog pages------------------------*/
+.text-box1{
+    text-align: center;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-box1 h1{
+    font-size: 50px;
+    font-family: Georgia;
+}
+
+.blog-col{
+    min-height:400px;
+    border: 1px white;
+    background: url(Image/cyber-security2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog-col1{
+    min-height:400px;
+    border: 1px white;
+    background: url(Image/HTML_Blog-scaled.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog-col2{
+    min-height:400px;
+    border: 1px white;
+    background: linear-gradient(rgba(14, 15, 22, 0.7),rgba(24, 26, 35, 0.7)),url(Image/slove-programming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog-col3{
+    min-height:400px;
+    border: 1px white;
+    background: linear-gradient(rgba(14, 15, 22, 0.7),rgba(24, 26, 35, 0.7)),url(Image/computer-network.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog-col4{
+    min-height:400px;
+    border: 1px white;
+    background: linear-gradient(rgba(14, 15, 22, 0.7),rgba(24, 26, 35, 0.7)),url(Image/Database-Management-System.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog-col5{
+    min-height:400px;
+    border: 1px white;
+    background: linear-gradient(rgba(14, 15, 22, 0.7),rgba(24, 26, 35, 0.7)),url(Image/wifi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.content h2{
+    font-size: 22px;
+    font-family: Verdana;
+    font-color: rgb(21, 168, 236);
+    text-align: left;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+.content p{
+    font-size: 20px;
+    font-family: Verdana;
+    font-color: black;
+    text-align: left;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}  
+
+.content ul{
+    font-size: 20px;
+    font-family: Verdana;
+    font-color: black;
+    text-align: left;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    list-style-type: disc;
+    padding-inline-start: 3cm;
+   
+}
+/*--------search--------------------*/
+.image{
+    background-image: url("Image/Fas.jpg");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container{
+    width: 100;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: rgb(161, 27, 27);
+    width: 600PX;
+    height: 40PX;
+    display: flex;
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+form button{
+    background: rgb(161, 27, 27);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
+}
+
+
+
+/*--------------------footer----------------------*/
+.footer{
+    background-color: #8d8686;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.icons .fa{
+    color: #a31c12;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+
